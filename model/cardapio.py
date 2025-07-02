@@ -30,4 +30,6 @@ class Cardapio:
             conn = conector()
             cursor = conn.cursor ( dictinary = True )
 
-            cursor.execute ("SELECT * FROM  Cardapio")    
+            cursor.execute ("SELECT * FROM  Cardapio") 
+            conn = cursor.fetchall()
+ 
